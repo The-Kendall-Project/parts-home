@@ -79,10 +79,12 @@ per-app difference.
 
 ## URLs
 
-Defaults: Ops Dashboard → kendall-ops.vercel.app · Warehouse →
+Defaults: Ops Dashboard → ops.kendallai.org · Warehouse →
 kp-context-warehouse.vercel.app · Foundry → kendall-foundry.vercel.app · Context Block Studio →
-context-block-studio.vercel.app · Capability → kendall-capability.vercel.app ·
-Dwell Guide → dwellguide.vercel.app.
+context-block-studio.vercel.app · Capability → capability.kendallai.org ·
+Dwell Guide → dwellguide.ai. Logix has no public default because its operational
+front end is accessed through Ops; consumers can still provide an explicit
+`NEXT_PUBLIC_LOGIX_URL` during a controlled migration.
 
 Override per app, either via `<KendallHome current=… overrides={{ control: "https://…" }} />`
 or build-time env vars `NEXT_PUBLIC_OPS_URL` / `NEXT_PUBLIC_CONTROL_URL` /
